@@ -1,0 +1,156 @@
+/* Footer Styles */
+.footer {
+    background-color: #1e1e2d;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-left h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+.footer-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-middle h3,
+.footer-right h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-middle ul li {
+    margin: 10px 0;
+}
+
+.footer-middle ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+    color: #ff6b6b;
+}
+
+.footer-right .social-links {
+    margin: 10px 0;
+}
+
+.footer-right .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-right .social-links a:hover {
+    color: #ff6b6b;
+}
+
+.footer-right .newsletter {
+    margin-top: 20px;
+}
+
+.footer-right .newsletter-input {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right .newsletter-input input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 200px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.footer-right .newsletter-input button {
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.footer-right .newsletter-input button:hover {
+    background-color: #e64747;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background-color: #1e1e2d;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        flex: none;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-middle ul {
+        padding: 0;
+    }
+
+    .footer-middle ul li {
+        margin: 5px 0;
+    }
+
+    .footer-right .newsletter-input {
+        flex-direction: column;
+    }
+
+    .footer-right .newsletter-input input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
